@@ -20,7 +20,7 @@ class GraphQLExplorerController extends Controller
      */
     public function explorerAction()
     {
-        $response = $this->render('@GraphQLBundle/Feature/explorer.html.twig', [
+        $response = $this->render('@GraphQL/Feature/explorer.html.twig', [
             'graphQLUrl' => $this->generateUrl('youshido_graphql_graphql_default'),
             'tokenHeader' => 'access-token'
         ]);
